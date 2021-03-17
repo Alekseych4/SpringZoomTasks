@@ -20,25 +20,6 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = getAnnotationContext("annotationConfiguration");
         Zoo setterZoo = context.getBean("zoo", Zoo.class);
- //       setterZoo.getAnimals().forEach(Animal::voice);
-//        setterZoo.getAnimal1().voice();
-//        setterZoo.getAnimal2().voice();
-//        setterZoo.doAllAnimalsHungry();
-
-
-//        AnimalService animalService = context.getBean("animalServiceImpl", AnimalService.class);
-//        Animal cat = context.getBean("cat", Animal.class);
-//        animalService.feedAnimal(
-//                Food.builder()
-//                .expiredDate(LocalDateTime.now().plusHours(3))
-//                .foodType(FoodType.FISH)
-//                .value(BigDecimal.valueOf(10))
-//                .build(),
-//                cat);
-//
-//
-//        cat.getAge();
-//        cat.throwException();
     }
 
     private static ApplicationContext getAnnotationContext(String profile) {

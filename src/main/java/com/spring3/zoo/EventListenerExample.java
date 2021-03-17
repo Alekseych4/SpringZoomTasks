@@ -19,15 +19,6 @@ public class EventListenerExample {
         this.foodWarehouse = foodWarehouse;
         this.animalService = animalService;
     }
-//    @EventListener
-//    public void catIsHungryEvent (AnimalIsHungryEvent<Cat> catAnimalIsHungryEvent){
-//        System.out.println("cat event caught");
-//    }
-//
-//    @EventListener
-//    public void dogIsHungryEvent (AnimalIsHungryEvent<Dog> dogAnimalIsHungryEvent){
-//        System.out.println("dog event caught");
-//    }
 
     @EventListener
     public void anyAnimalIsHungryEvent (AnimalIsHungryEvent animalIsHungryEvent){
