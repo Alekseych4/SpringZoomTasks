@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Component
 public class Job {
 
-    @Scheduled(cron = "1 * * * * *")
+    //@Scheduled(cron = "1 * * * * *")
     public void job(){
         System.out.println(LocalDateTime.now());
     }
